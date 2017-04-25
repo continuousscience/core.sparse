@@ -1,0 +1,17 @@
+-- Prototypes for included primitive functions
+
+add = binop
+mul = binop
+sub = binop
+
+eye = fun Int n -> SparseMat
+
+fromList = fun List((Int,Int,Float)) l -> SparseMat
+
+fromColFn = fun (fun Int col -> [(Int,Float)]) f, Int n, Int m -> SparseMat
+
+toList = fun SparseMat v -> List((Int,Int,Float))
+
+elem = fun SparseMat v, Int i, Int j -> Float
+
+setElem = fun Int i, Int j, Float x -> ST(SparseMat, Nil)

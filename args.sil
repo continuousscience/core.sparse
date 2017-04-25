@@ -1,0 +1,12 @@
+-- Number of args for each primitive.
+add = 2
+mul = 2
+sub = 2
+eye = 1
+
+fromList = 1
+toList = 1
+fromColFn = 3
+
+setElem = 3
+elem = 2
